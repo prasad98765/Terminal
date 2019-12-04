@@ -1,0 +1,5 @@
+#!/bin/bash -x
+read -p "Enther day " day
+read -p "Enther month" month
+
+if [[ $month = "march" && $day -gt 0 && -lt 31]]			
