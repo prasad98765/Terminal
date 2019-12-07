@@ -1,0 +1,28 @@
+#!/bin/bash -x
+reverse=0
+flag=1
+read -p "Enter the number" n
+fristNumber=$( PrimePalindrome )
+
+function PrimePalindrome()
+{
+	while [ $n -gt 0 ]
+	do
+		a=`expr $n % 10 `
+		n=`expr $n / 10 `
+		reverse=`expr $reverse \* 10 + $a`
+		
+	done
+	echo $flag
+
+}
+	read -p "Enther the Secound Number "n
+	SecoundNumber=$( PrimePalindrome )
+
+	if [[ $flag -eq $fristNumber && $flag -eq $SecoundNumber ]]
+	then
+		echo "number is Palindromes"
+	else
+		echo "number is not Palindromes"
+	fi
+

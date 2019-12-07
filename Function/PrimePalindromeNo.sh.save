@@ -1,0 +1,8 @@
+#!/bin/bash -x
+reverse=0
+flag=1
+read -p "Enter the number" n
+fristNumber=$( PrimePalindrome )
+
+function PrimePalindrome()
+{
